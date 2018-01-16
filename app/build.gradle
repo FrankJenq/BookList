@@ -5,7 +5,7 @@ android {
         config {
             keyAlias '0'
             keyPassword '2keysjks'
-            storeFile file('D:/Proflies/Documents/Keys.jks')
+            storeFile file('Keys.jks')
             storePassword '2booklist'
         }
     }
