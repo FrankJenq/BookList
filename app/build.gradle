@@ -1,14 +1,6 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias '0'
-            keyPassword '2keysjks'
-            storeFile file('Keys.jks')
-            storePassword '2booklist'
-        }
-    }
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.example.android.booklist"
@@ -22,9 +14,6 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-        debug {
-            signingConfig signingConfigs.config
         }
     }
 }
